@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Assignment </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Assignment Question 1 -->
+    <p>
+    <h2> Are the HTML Tags and Elements the same thing? </h2>
+    </p>
+    <p>
+        No, HTML tags and elements are not the same thing, although they are closely related. <br><br> HTML tags are in
+        the
+        angle brackets which are used to identify elements and define their attributes. <br> for ex. &lt;img&gt; &nbsp;
+        this tag is used to define the image. <br><br> Where as the elements, are the building blocks of HTML documents
+        and
+        consists of the start tag, content and an end tag. <br> for ex. &lt;p&gt;My name is Vismay Modi&lt;&frasl;p&gt;
+        <br> Here &lt;p&gt; is a Start tag. "My name us Vismay Modi" is Content. And &lt;&frasl;p&gt;is an End tag.
+        <br><br>
+        In summary, tags are used to define the type of elements, while elements are made up of the tag(s) and the
+        content that is enclosed between them.
+    </p>
+
+    <!-- Assignment Question 2 -->
+    <p>
+    <h2> What are Tags and Attributes in HTML? </h2>
+    </p>
+    <p> In HTML, the tags and Attributes are used to define the structure and appearance of the web pages. <br><br> Tags
+        generally surround the content and provide the information regarding the content they surrounded. <br><br> Where
+        as, Attributes are used to provide additional information about an element such as the size, color or behaviour
+        of an element. <br><br> for ex. &lt;input <b>type</b>="text" <b>placeholder</b>="Enter your name"
+        <b>required</b>&gt; <br> Here, &lt;input&gt; tag defines an input element, and attributes are type, placeholder
+        and required which provide additional information about the input.
+    </p>
+
+    <!-- Assignment Question 3 -->
+    <p>
+    <h2> What are Void Elements in HTML? </h2>
+    </p>
+    <p> Void Elements are elements that do not have a closing tag and cannot contain any content. They are also called
+        <u>'Self Closing tags'</u> or <u>'Empty Elements'</u>. <br><br> for ex.
+    <ol>
+        <li> &lt;img <b>src</b>="car.jpg" <b>alt</b>="Car Image"&gt;</li>
+        <li>&lt;br&gt;</li>
+    </ol> Here, as it is clear that each of these elements consists of just the start tag and no closing tag. They
+    can even provide the additional information to the web page without needing the content.
+    </p>
+
+    <!-- Assignment Question 4 -->
+    <p>
+    <h2> What are HTML Entities? </h2>
+    </p>
+    <p> Entities are used ti ensure that reserved characters are displayed properly on web pages, regardless of the
+        browser or platform being used to view them. They are either special codes or characters. <br><br> They are
+        represented using a special syntax of an <b>ampersand (&)</b> symbol followed by a <b> sequence of characters
+            and semicolon </b> sign. <br><br> for ex.
+    <ol>
+        <li>&#38;copy; &rightarrow; To display a copyright &copy; symbol</li>
+        <li>&#38;nbsp; &rightarrow; To display non-breaking space</li>
+        <li>&#38;quot; &rightarrow; To display double quote <b>""</b> symbol</li>
+        <li>&#38;apos; &rightarrow; To display single quote <b>'</b> symbol</li>
+    </ol>
+    </p>
+
+    <!-- Assignment Question 5 -->
+    <p>
+    <h2> What are different type of Lists in HTML? </h2>
+    </p>
+    <p> There are mainly 3 types of lists that can be used to organize and structure the content. <br>
+    <ol>
+        <li> <strong> Ordered List("&lt;ol&gt;") <u>or</u> Numbered List(NL): </strong></li>
+        <p> &rightarrow; Ordered lists are used to present a list of items in a specific order or sequence. List styles
+            could be applied are <strong> 1, I, i, A, a </strong> <br><br> for ex.<br> &lt;ol <b>type</b>="A"
+            <b>start</b>="2"&gt;<br>&lt;li&gt; home &lt;&frasl;li&gt;<br>&lt;li&gt; about
+            &lt;&frasl;li&gt;<br>&lt;li&gt; contact us &lt;&frasl;li&gt;<br>&lt;&frasl;ol&gt;<br><br>
+            &rightarrow;<ins><strong> Output: </strong></ins>
+            <br>
+            B. home <br> C. about <br> D. contact us
+        </p>
+        <li><strong> Unordered List("&lt;ul&gt;") <u>or</u> Bulleted List(BL): </strong> </li>
+        <p> &rightarrow; Unordered lists are used to represent a list of items that do not have a specific order or
+            sequence. List styles could be applied are <strong> disc, circle, square, none </strong> <br><br> for
+            ex.<br> &lt;ul <b>type</b>="circle"&gt;<br>&lt;li&gt; Vismay &lt;&frasl;li&gt;<br>&lt;li&gt; Navin
+            &lt;&frasl;li&gt;<br>&lt;li&gt; Nipuna &lt;&frasl;li&gt;<br>&lt;&frasl;ul&gt;<br><br>
+            &rightarrow;<ins><strong> Output: </strong></ins>
+            <br>
+            &cir; Vismay <br> &cir; Navin <br> &cir; Nipuna
+        </p>
+        <li><strong> Definition List("&lt;dl&gt;") <u>or</u> Description List(DL): </strong> </li>
+        <p> &rightarrow; Definition lists are used to represent a list of items and their corresponding definitions.
+            Each item is enclosed in &lt;dt&gt; and each detail is enclosed in &lt;dl&gt; tag. <br><br> for
+            ex.<br> &lt;dl&gt;<br>&nbsp;&nbsp;&lt;dt&gt; What is TOPS? &lt;&frasl;dt&gt;<br>&nbsp;&nbsp;&lt;dd&gt; TOPS
+            is a computer coding institute. &lt;&frasl;dd&gt;<br><br> &rightarrow;<ins><strong> Output: </strong></ins>
+            <br> What is TOPS? <br>&nbsp;&nbsp; TOPS is a computer coding institute.
+        </p>
+    </ol>
+    </p>
+
+    <!-- Assignment Question 6 -->
+    <p>
+    <h2> What is the Class attribute in HTML? </h2>
+    </p>
+    <p> The <b>'class'</b> attribute is used to assign a specific class or classes to HTML elements. <br> &rightarrow; A
+        class is a way of grouping similar elements together so that they can be targeted and styled with the same CSS
+        rules as well. <br><br> for ex. <br> &lt;p <b>class</b>="my"&gt; This is my class. &lt;&frasl;p&gt; <br> &lt;p
+        <b>class</b>="my"&gt; This is my second class. &lt;&frasl;p&gt; <br><br> Here, both the paragraphs have been
+        assigned to the same class "my" using the 'class' attribute and it could be targeted using CSS to apply specific
+        styles to both the paragraphs at once.
+    </p>
+
+    <!-- Assignment Question 7 -->
+    <p>
+    <h2> What is the difference between the 'id' attribute and the 'class' attribute of HTML elements? </h2>
+    </p>
+    <p> Both the <b>'id'</b> attribute and the <b>'class'</b> attribute are used to assign specific names or identifiers
+        to HTML elements, but they have different purposes. <br><br> The <b>'id'</b> attribute is used to uniquely
+        identify a single element. Where as, the <b>'class'</b> attribute is used to group together multiple elements
+        that share common styles or behaviors. <br><br> for ex. <br> &lt;section
+        <b>class</b>="sauce"&gt;..... &lt;&frasl;section&gt; <br> &lt;div <b>id</b>="photo"&gt;..... &lt;&frasl;div&gt;
+        <br><br> Here,<br>(1) where the class="sauce" is given, in that section or any other element that would be
+        outside of that section in a program and defined with the same class(grouping), will accept all
+        the styles and or behaviours given in CSS for that particular class. <br>(2) where the id="photo" is given that
+        id is unique and no other
+        element can have that same id in the program as any style or behavior defined in the CSS will be specifically
+        applied to that element only and it won't be repeated on the same webpage with other elements again.
+    </p>
+
+    <!-- Assignment Question 8 -->
+    <p>
+    <h2> What are the various formatting tags in HTML? </h2>
+    </p>
+    <p> Some of the commonly used formatting tags are as below: <br> (1) &lt;b&gt; &nbsp; &lt;&frasl;b&gt; &rightarrow;
+        To display bold fonts
+        <br> (2) &lt;strong&gt; &nbsp; &lt;&frasl;strong&gt; &rightarrow; It works same as bold tag but it indicates the
+        importancy of content to the browser. <br> (3) &lt;i&gt; &nbsp; &lt;&frasl;i&gt; &rightarrow; To display italic
+        fonts <br> (4) &lt;em&gt; &nbsp; &lt;&frasl;em&gt; &rightarrow; It works same as Italic tag but it also
+        indicates the importancy of content to the browser <br> (5) &lt;u&gt; &nbsp; &lt;&frasl;u&gt; &rightarrow; To
+        display underline under content <br> (6) &lt;ins&gt; &nbsp; &lt;&frasl;ins&gt; &rightarrow; It works same as
+        Underline tag but it also indicates the importancy of content to the browser. <br> (7) &lt;s&gt; &nbsp;or &nbsp;
+        &lt;del&gt; &rightarrow; These tags are used to add a strikthrough to text <br> (8) &lt;sup&gt; &nbsp;
+        &lt;&frasl;sup&gt; &rightarrow; To create superscript text <br> (9) &lt;sub&gt; &nbsp; &lt;&frasl;sub&gt;
+        &rightarrow; To create subscript text <br> (10) &lt;h1&gt; &nbsp;to&nbsp; &lt;h6&gt; &rightarrow; To create
+        heading and subheading on a web page. &lt;h1&gt;for the main heading, &lt;h2&gt; to &lt;h6&gt; for subheading of
+        decreasing importance. <br> (11) &lt;p&gt; &nbsp; &lt;&frasl;p&gt; &rightarrow; To create paragraphs on webpage.
+    </p>
+
+    <!-- Assignment Question 9 -->
+    <p>
+    <h2> How is Cell Padding different from Cell Spacing? </h2>
+    </p>
+    <p><b> 'cellpadding' </b> and <b> 'cellspacing' </b> are both attributes that can be used to control the spacing
+        around and between
+        cells in HTML table. <br><br> 'cellpadding' controls the spacing between the content of a cell and table's
+        border, while 'cellspacing' controls the spacing between adjacent cells in a table. <br>
+    <table border="1" cellspacing="10" cellpadding="20">
+        <caption style="font-size: 40px;"> Cell 1-10 </caption>
+        <thead>
+            <tr>
+                <th colspan="2"> Cell 1 </th>
+                <th> Cell 2 </th>
+                <th> Cell 3 </th>
+            </tr>
+            <tr>
+                <th rowspan="3"> Cell 4 </th>
+                <th> Cell 5 </th>
+                <th> Cell 6 </th>
+                <th> Cell 7 </th>
+            </tr>
+            <tr>
+                <th colspan="3"> Cell 8 </th>
+            </tr>
+            <tr>
+                <th> Cell 9 </th>
+                <th colspan="2"> Cell 10 </th>
+            </tr>
+        </thead>
+
+    </table><br> Here, in the above table <b>'cellpadding=20'</b> and <b>'cellspacing=10'</b> is given which is clearly
+    visible. </p>
+
+    <!-- Assignment Question 10 -->
+    <p>
+    <h2> How can we club two or more rows or columns into a single row or column in an HTML table? </h2>
+    </p>
+    <p> In order to combine two or more rows into a single row in table, we can use <b>'rowspan'</b> attribute.
+        <br><br>for ex. <br>(1)
+    <table border="1" width="450">
+        <tr>
+            <td rowspan="2">1st row with rowspan of 2/Column 1 </td>
+            <td> Column 2 </td>
+        </tr>
+        <tr>
+            <td>2nd row and 2nd column</td>
+        </tr>
+    </table><br>Here in the table, it is clear the 1st and 2nd row's Column 1 has been merged using the 'rowspan'
+    attribute. <br><br> Where as, in order to combine two or more columns into a single column in table, we can use
+    <b>'colspan'</b> attribute.<br><br>for ex. <br>(2)
+    <table border="1" width="450">
+        <tr>
+            <td colspan="2">1st row with colspan of 2 </td>
+        </tr>
+        <tr>
+            <td>2nd row-1st column</td>
+            <td> 2nd row-2nd column</td>
+        </tr>
+    </table><br>Here in the table, it is clear the 1st row's two columns have been merged using the 'colspan'
+    attribute.
+
+    </p>
+
+    <!-- Assignment Question 11 -->
+    <p>
+    <h2> What is the difference between a block level element and an inline element? </h2>
+    </p>
+    <p> The main difference between block level and inline elements are their width and height default behaviours, and
+        how they affect the layout of content. <br><br> Block level element create a new line and take up the full
+        width. <br><br> for ex. <br>
+    <ol>
+        <li> Line 1: <b> Content 1 </b>.......blank upto line width</li>
+        <li> Line 2: <b> Content 2 </b>.......blank upto line width</li>
+        <li> Line 3: <b> Content 3 </b>.......blank upto line width</li>
+    </ol> Common example tags of Block level element: &lt;div&gt; , &lt;article&gt; , &lt;fieldset&gt;,
+    &lt;h1&gt;.....&lt;h6&gt;<br><br> Where as, Inline elements do not create a new line and only take up the width
+    required by its content. <br><br> for ex. <br><br>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <tr>
+            <td>Content 1</td>
+            <td>Content 2</td>
+            <td>Content 3</td>
+            <td> All contents come in the same line(table just taken to explain)</td>
+        </tr>
+    </table> <br>Common example tags of Inline level elements: &lt;a&gt; , &lt;img&gt; , &lt;input&gt; &lt;span&gt; </p>
+
+    <!-- Assignment Question 12 -->
+    <p>
+    <h2> How to create a hyperlink in HTML? </h2>
+    </p>
+    <p> To create a hyperlink in HTML, we use the <b>'&lt;a&gt; tag' </b> which defines a hyperlink to a web pag or a
+        specific location on the same page.<br><br> for ex. &nbsp; &lt;a
+        <b>href</b>="https://en.wikipedia.org/wiki/Brown_bear"&gt; Click here to go to Brown Bear Wikipedia
+        &lt;&frasl;a&gt; <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"> Click here to go to Brown
+            Bear Wikipedia </a>
+        <br><br> In the above ex, <b>'href'</b> attribute specifies the URL or the
+        webpage that the hyperlink will link to and content 'Click here to go to Brown
+        Bear Wikipedia' will be displayed as the hyperlink text.
+    </p>
+
+    <!-- Assignment Question 13 -->
+    <p>
+    <h2> What is the use of an iframe tag?</h2>
+    </p>
+    <p> The main use of &lt;iframe&gt; tag is to embed external content such as videos, maps, social media,
+        advertisements, and more from another website into the current web page. <br><br> It helps in creating an extra
+        display screen or to open a webpage inside a webpage. <br><br> &lt;iframe&gt; tag can have security
+        implications, because it could be used for phishing attacks. Therefore, it is imperative to only embed content
+        from trusted sources. <br><br> for ex.&lt;iframe
+        <b>src</b>="https://www.google.com/maps/embed?" <b>width</b>="1480" <b>height</b>="450" <b>style</b>="border:1;"
+        <b>allowfullscreen</b>="" <b>loading</b>="lazy"
+        <b>referrerpolicy</b>="no-referrer-when-downgrade"&gt;&lt;&frasl;iframe&gt; <br><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.1947362350184!2d73.1823304147554!3d22.308473785319322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf4bdaf0f89b%3A0xdd295e03d2b284b6!2sTops%20Technologies%20-%20Best%20Software%20%26%20Hardware%20Training%20Institute%20in%20Vadodara!5e0!3m2!1sen!2sin!4v1681131514230!5m2!1sen!2sin"
+            width=" 1480" height="450" style="border:1;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+
+    <!-- Assignment Question 14 -->
+    <p>
+    <h2> What is the use of a span tag? Explain with example. </h2>
+    </p>
+    <p> HTML offers only two generic elements( &lt;div&gt; and &lt;span&gt;) which can be used to describe any text
+        content which can not be explained
+        with any of the existing HTML text elements. <br><br>Span indicates a word or phrase for which no text-level
+        element currently exists. The generic elements are given meaning and context with the id and class
+        attributes. <br><br> A span offers the same benefits as the <b>div</b> element, except it is <strong>used for
+            phrase elements and does not introduce line breaks</strong>. Because spans are inline elements, they may
+        contain only text and other inline elements (in other words, you cannot put headings, lists, content-grouping
+        elements, and so on, in a span). <br><br> for ex. <br>&lt;section <b>class</b>="cooked"&gt;<br>&nbsp;&nbsp;
+        &lt;label <b>for</b>="doneness"&gt;How do you want your bread
+        cooked?&lt;&frasl;label&gt;<br>&nbsp;&nbsp;&lt;span&gt;Rare&lt;&frasl;span&gt;<br>&nbsp;&nbsp;&lt;input
+        <b>type</b>="range" <b>id</b>="doneness" <b>name</b>="doneness"
+        <b>min</b>="0"
+        <b>max</b>="5"
+        <b>step</b>="0.5"&gt;<br>&nbsp;&nbsp;&lt;span&gt;Well-done&lt;&frasl;span&gt;<br>&lt;&frasl;section&gt;<br><br>&rightarrow;<u>Output:</u><br>
+    <section class="cooked">
+        <label for="doneness">How do you want your bread cooked?</label>
+        <br>
+        <span>Rare</span>
+        <input type="range" id="doneness" name="doneness" min="0" max="5" step="0.5">
+
+        <span>Well-done</span>
+    </section><br>Here in the example, Rare and Well-done have been printed using the &lt;span&gt;element which is
+    making it easier to context them along with the &lt;input&gt;'s <b>type="Range" and id="doneness"</b> attribute.
+    </p>
+
+    <!-- Assignment Question 15 -->
+    <p>
+    <h2> How to insert a picture into a background image of a web page? </h2>
+    </p>
+    <p> The most common way to insert a picture into a background image of a web page in HTML is to write the
+        <b>background</b> attribute in the body tag itself. In background attribute we can put a url from the internet
+        or any downloaded image's path from the computer as a value in order for it to appear as the background
+        image.<br><br> for ex. &lt;body <b>background</b>="URL/File Path from computer"&gt;
+
+        <body
+            background="https://media.istockphoto.com/id/1370544962/photo/white-paper-background-fibrous-cardboard-texture-for-scrapbooking.jpg?b=1&s=612x612&w=0&k=20&c=Y64GICJMLEoo0krvOLR9JppnnmTIftNw2q0X_zUktrk=">
+        </body>
+    </p>
+
+    <!-- Assignment Question 16 -->
+    <p>
+    <h2> How are active links different from normal links? </h2>
+    </p>
+    <p> In HTML, we can create the links using an anchor <b>&lt;a&gt;</b> element. <br> Firstly, on the web page the
+        <b>Normal Link(Unvisited link)</b> is displayed in <b>Blue</b> color. <br>Secondly, as soon as we click on that
+        link to
+        go to the redirected page and come back to the main link back the color changes to Purple which indicates that
+        the user has visited this link before. <br> Thirdly, <b>Active links</b>! These links turn in <b>Red</b> color
+        and they
+        show that the browser is in the process to load a new resource as soon as the user right clicks any of the
+        visited or unvisited link. <br><br> for ex. &nbsp; &lt;a
+        <b>href</b>="https://en.wikipedia.org/wiki/Brown_bear"&gt; Click here to go to Brown Bear Wikipedia
+        &lt;&frasl;a&gt; <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"> Click here to go to Brown
+            Bear Wikipedia </a> <br>In the above link follow the steps as mentioned in the answer and the difference
+        between the normal and active links would be easily visible.
+    </p>
+
+    <!-- Assignment Question 17 -->
+    <p>
+    <h2>What are the different tags to separate sections of text?</h2>
+    </p>
+    <p> We can separate sections of text in HTML using below mentioned tags: <br>
+    <ol>
+        <li>&lt;br&gt;&rightarrow; It is used to separate the line of text by breaking the existing line and taking the
+            text to a new line on webpage.</li> <br>for ex. <br> &lt;p&gt; This assignment has 20
+        questions.&lt;br&gt; But, the answers are yet to be prepared.&lt;&frasl;p&gt; <br><br>
+        &rightarrow;<ins><b>Output:</b></ins><br>
+        <p> This assignment has 20 questions.<br>But the answers are yet to be prepared.</p>
+        <li>&lt;hr&gt;&rightarrow; It is mainly used to stretch a <b>horizontal rule</b> that is used to separate the
+            content written in two separate lines.</li><br>for ex. <br> &lt;p&gt;This assignment has 20
+        questions.&lt;&frasl;p&gt; &lt;hr&gt;&lt;p&gt; But the answers are yet to be
+        prepared.&lt;&frasl;p&gt;<br><br>&rightarrow;<ins><b>Output:</b></ins><br>
+        <p> This assignment has 20 questions.</p>
+        <hr>
+        <p>But the answers are yet to be prepared.</p>
+        <li>&lt;p&gt;&rightarrow; It is used to write different paragraphs of text on a webpage using HTML.</li><br>
+        for ex. <br>&lt;p&gt; This assignment has 20
+        questions.&lt;&frasl;p&gt; &lt;p&gt; But, the answers are yet to be prepared.&lt;&frasl;p&gt;
+        <br><br>&rightarrow;<ins><b>Output:</b></ins><br>
+        <p> This assignment has 20 questions.</p>
+        <p>But the answers are yet to be prepared.</p>
+    </ol>
+    </p>
+
+    <!-- Assignment Question 18 -->
+    <p>
+    <h2>What is SVG?</h2>
+    </p>
+    <p> This topic is yet to be covered in the HTML lectures by Sir. It will be updated once given enough knowledge
+        about the topic.</p>
+
+    <!-- Assignment Question 19 -->
+    <p>
+    <h2>What is difference between HTML and XHTML?</h2>
+    </p>
+    <p>
+    <ol>
+        <li>HTML stands for Hyper Text Markup Language, and XHTML stand for Extensible Hypertext Markup Language which
+            is a connection between HTML and XML(Extensible Markup Language).</li>
+        <li>HTML is not case-sensitve so tags and attributes could be written in lower or upper case as needed, where as
+            XHTML is case-sensitive and strict with every tags and attributes written in the code should be lower case
+            only.</li>
+        <li>HTML files can be stored with .htm,.html extensions; whereas XHTML can be stored with .xhtml,.xht or .xml
+            extensions.</li>
+        <li>HTML can add attributes without any quote and in XHTML, it is mandatory to add quotes on every declared
+            attribute. </li>
+    </ol>
+    </p>
+
+
+    <!-- Assignment Question 20 -->
+    <p>
+    <h2> What are logical and physical tags in HTML? </h2>
+    </p>
+    <p>There are 2 types of tags in HTML: <br>
+    <ol>
+        <li><u>Logical Tags:</u></li><br>
+        <p> Logical tags are tags that describe the structure and meaning of the content, without specifying how it
+            should be displayed. <br><br>for ex. Heading tags(&lt;h1&gt; to &lt;h6&gt;) ; Paragraph tag (&lt;p&gt;) ;
+            Table tag(&lt;table&gt;) and more... <br> These tags provide meaning to the content and help screen readers
+            to understand the content structure. </p>
+        <li><u> Physical Tags: </u></li><br>
+        <p> Physical tags are tags that describe how the content should be displayed on the screen.<br><br>for ex. Bold
+            and strong tag(&lt;b&gt; and &lt;strong&gt;) ; Underline tag (&lt;u&gt; or &lt;ins&gt;) and many more...
+            <br> These tags normally provide visual styling to the content.
+        </p>
+    </ol>
+    </p>
+
+</body>
+
+</html>
