@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .page {
+            width: 50%;
+            height: auto;
+            background-color: darkturquoise;
+            margin: 0 auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 20%;
+            background-color: lightskyblue;
+            color: red;
+        }
+
+        .header>h1 {
+            text-align: center;
+        }
+
+        .form {
+            padding: 0 10px;
+        }
+
+        form h2 {
+            color: red;
+            text-align: left !important;
+        }
+
+        .form label {
+            margin-right: 20px;
+            line-height: 25px;
+            display: inline-block;
+            width: 150px;
+            text-align: end;
+            color: navy;
+            font-weight: 600;
+        }
+
+        .form .user label {
+            margin-left: 25%;
+        }
+
+        .form input {
+            border-color: blue;
+        }
+
+        .personal .personal-box {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .account .details {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .declaration p {
+            color: navy;
+            font-weight: 600;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer input {
+            padding: 5px;
+            margin-right: 1%;
+            margin-bottom: 1%;
+            background-color: lightsalmon;
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>Individual Registration</h1>
+        </div>
+
+        <div class="form">
+            <form>
+                <div class="user">
+                    <h2>User Paritculars</h2>
+                    <label for="login"> *Login ID </label>
+                    <input type="text" id="login" placeholder="Enter your UserId" required><br>
+                    <label for="password"> *Password </label>
+                    <input type="password" id="password" required><br>
+                    <label for="confirm"> *Confirm Password </label>
+                    <input type="password" id="confirm" placeholder="Re-enter your password" required>
+                </div>
+
+                <div class="personal">
+                    <h2>Personal Particulars</h2>
+                    <div class="personal-box">
+                        <div class="personal-left">
+                            <label for="salutation"> *Salutation </label>
+                            <select name="value" id="salutation" required>
+                                <option value="value">Select</option>
+                                <option value="value">Mr.</option>
+                                <option value="value">Mrs.</option>
+                                <option value="value">Miss.</option>
+                            </select><br>
+
+                            <label for="m-name"> Middle Name </label>
+                            <input type="text" id="m-name"><br>
+
+                            <label for="status"> *Resident Status </label>
+                            <select name="s-value" id="status" required>
+                                <option value="s-value">Select</option>
+                                <option value="s-value">Temporary Resident</option>
+                                <option value="s-value">Visa holder</option>
+                                <option value="s-value">Permenant Resident</option>
+                                <option value="s-value">Citizen</option>
+                            </select><br>
+
+                            <label for="email"> *Email-Id </label>
+                            <input type="email" required><br>
+                        </div>
+
+                        <div class="personal-right">
+                            <label for="f-name"> *First Name</label>
+                            <input type="text" id="f-name" required><br>
+                            <label for="l-name">*Last Name</label>
+                            <input type="text" id="l-name" required><br>
+                            <label for="country"> *Country </label>
+                            <select name="" id="country" required>
+                                <option> Select </option>
+                                <option> Asia </option>
+                                <option> Africa & Middle East </option>
+                                <option> Europe </option>
+                                <option> America </option>
+                            </select><br>
+                            <label for="mobile"> *Mobile Number </label>
+                            <input type="tel" id="mobile" required><br>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="account">
+                    <h2>Account Particulars</h2>
+                    <div class="details">
+                        <div class="details-left">
+                            <label for="acc_no"> *15 Digit Account No. </label>
+                            <input type="text" id="acc_no" required><br>
+                            <label for="fund"> *Fund Transfer </label>
+                            <select name="" id="fund" required>
+                                <option value=""> Select </option>
+                                <option value="Checking"> Checking </option>
+                                <option value="Savings"> Savings </option>
+                            </select>
+                        </div>
+
+                        <div class="details-right">
+                            <label for="nick"> *Nick Name </label>
+                            <input type="text" id="nick">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="declaration">
+                    <h2>Declaration</h2>
+                    <p>I have read, understood and hereby agree to the Terms and Conditions in respect of all products
+                        and channels. <br>
+                        I understand that any changes in the terms and conditions applicable to this relationship would
+                        be made available to me on request at any IOB branches. I confirm that all accounts under this
+                        login name are operated singly and in case of joint account operated by either or
+                        survivor/anyone or survivor(s) under his/her joint name respectively. I do hereby declare that
+                        information furnished in this form is true to the best of my knowledge and belief.</p>
+                </div>
+
+                <div class="footer">
+                    <input type="submit" value="Submit" name="submit">
+                    <input type="submit" value="Reset" name="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

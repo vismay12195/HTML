@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Designing | HTML5 (Module 2 & 3) </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-image: url(https://img.freepik.com/free-vector/black-business-background-with-blue-streaks_53876-118965.jpg?size=626&ext=jpg&ga=GA1.1.1983807991.1682936986&semt=ais);
+            background-size: cover;
+            color: aliceblue;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2% auto;
+            line-height: 30px;
+        }
+
+        h1 {
+            color: slateblue;
+            background-color: cornsilk;
+            padding: 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        ol {
+            background-color: teal;
+            color: bisque;
+            padding: 1% 3%;
+            font-size: 18px;
+        }
+
+        #menu {
+            width: 15%;
+            height: 50px;
+            border-radius: 10px;
+            border-color: blueviolet;
+            border-width: 5px;
+            color: rgb(206, 153, 60);
+            font-size: 22px;
+            font-weight: 800;
+            background-color: beige;
+        }
+
+        /* CSS for Registration Form */
+
+        .title {
+            color: #ffffff;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        .title h1 {
+            margin-bottom: 10px;
+        }
+
+        #description {
+            font-size: 1.2em;
+        }
+
+        #survey-form {
+            background-color: #1b1b32;
+            margin: 0 25%;
+            padding: 40px 35px 60px 35px;
+        }
+
+        fieldset {
+            border: 0;
+            padding: 1rem 0;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 0 0;
+            color: white;
+            font-size: 20px;
+        }
+
+        select {
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+            height: 15px;
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        input[type="radio"] {
+            height: 15px;
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            margin-top: 10px;
+            font-family: cascadia code;
+        }
+
+        #name-label,
+        #email-label,
+        #number-label {
+            margin-bottom: 22px;
+        }
+
+        #name,
+        #email,
+        #number,
+        #submit {
+            width: 100%;
+            font-size: 16px;
+        }
+
+        #name,
+        #email,
+        #number,
+        #dropdown,
+        #feature {
+            height: 35px;
+            margin-top: 8px;
+            min-width: fit-content;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-family: cascadia code;
+        }
+
+        #dropdown,
+        #feature {
+            margin-bottom: 8px;
+        }
+
+        .option1 {
+            color: silver;
+        }
+
+        #submit {
+            margin-top: 2em;
+            height: 50px;
+            font-family: cascadia code;
+            background-color: #37af65;
+        }
+
+        /* Registration form ends here */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Q.1 - Define the terms: Website, Webpage, Web browser, Web server, HTML, CSS -->
+        <h2>Define the terms: Website, Webpage, Web browser, Web server, HTML, CSS</h2><br>
+        <ul>
+            <li><b>Website:</b>A collection of related web pages and multimedia content accessible through a unique
+                domain
+                name or URL.</li>
+            <li><b>Webpage:</b>A single document or file that forms part of a website and is displayed in a web browser.
+            </li>
+            <li><b>Web server:</b>A computer or system that hosts and delivers web content to clients upon request,
+                responding to browser requests and sending back the requested files or data.</li>
+            <li><b>Web browser:</b>Software application that allows users to access, view, and interact with websites
+                and
+                web pages on the internet by interpreting HTML, CSS, and JavaScript code.</li>
+            <li><b>HTML:</b>Hypertext Markup Language; the standard markup language used to structure and present
+                content on
+                the web, defining elements and components of a webpage.</li>
+            <li><b>CSS:</b> Cascading Style Sheets; a stylesheet language used to describe the presentation and
+                formatting
+                of HTML documents, controlling the visual aspects and layout of webpages.</li>
+        </ul><br>
+
+        <!-- Q.2 - Create a webpage to show “This is my first HTML page” -->
+        <h2>Create a webpage to show “This is my first HTML page”</h2><br>
+        <h1>"This is my first HTML page"</h1><br>
+
+        <!-- Q.3 - Display top 10 IT companies list in html webpage-->
+        <h2>Display top 10 IT companies list in html webpage</h2><br>
+        <ol type="1">
+            <li>Infosys</li>
+            <li>HCL Technologies</li>
+            <li>Tech Mahindra</li>
+            <li>Mphasis</li>
+            <li>Wipro</li>
+            <li>Hexaware Technologies</li>
+            <li>Mindtree</li>
+            <li>Seqato</li>
+            <li>eSparkBiz</li>
+            <li>Tata Consultancy Services</li>
+        </ol><br>
+
+        <!-- Q.4 - Create a dropdown list-->
+        <h2>Create a dropdown list</h2><br>
+        <p>Below code is used to create a dropdown list</p>
+        <code style="color: orange;">
+        &lt;form&gt;<br>
+        &nbsp;&nbsp;&nbsp;&emsp;&lt;select name="dropdown" id="menu"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&lt;option value="dropdown"&gt;Name&lt;&frasl;option&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&lt;option value="dropdown"&gt;Email&lt;&frasl;option&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&lt;option value="dropdown"&gt;Age&lt;&frasl;option&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&lt;option value="dropdown"&gt;Phone no.&lt;&frasl;option&gt;<br>
+        &nbsp;&nbsp;&nbsp;&emsp;&lt;&frasl;select&gt;<br>
+        &emsp;&lt;&frasl;form&gt;<br>
+    </code>
+        <form>
+            <select name="dropdown" id="menu">
+                <option value="dropdown">Name</option>
+                <option value="dropdown">Email</option>
+                <option value="dropdown">Age</option>
+                <option value="dropdown">Phone no.</option>
+            </select>
+        </form><br>
+
+        <!-- Q.5 - Create a Table Of college Management system using row span & col span. -->
+
+        <h2>Create a Table Of college Management system using row span & col span.</h2><br>
+        <table border="5" width="100%" style="text-align: center;" cellspacing="0">
+            <caption style="font-size: 25px;"> College Management Schedule </caption>
+            <thead>
+                <tr>
+                    <th rowspan="3"> Day </th>
+                    <th colspan="3"> Management </th>
+                </tr>
+                <tr>
+                    <th colspan="2"> Schedule </th>
+                    <th rowspan="2"> Topic </th>
+                </tr>
+                <tr>
+                    <th> Begin </th>
+                    <th> End </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2"> Monday </td>
+                    <td rowspan="2"> 8:00 a.m. </td>
+                    <td rowspan="2"> 5:00 p.m. </td>
+                    <td> Introduction to XML </td>
+                </tr>
+                <tr>
+                    <td> Validity: DTD and Relax NG </td>
+                </tr>
+                <tr>
+                    <td rowspan="3"> Tuesday </td>
+                    <td> 8:00 a.m. </td>
+                    <td> 11:00 a.m. </td>
+                    <td rowspan="3">
+                        <table border="1" cellapdding="5" width="950" style="margin-left: -0.1%;">
+                            <tr>
+                                <td>XPath</td>
+                            </tr>
+                            <tr>
+                                <td> XSL Transformation </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 11:00 a.m. </td>
+                    <td> 2:00 p.m. </td>
+                </tr>
+                <tr>
+                    <td> 2:00 p.m. </td>
+                    <td> 5:00 p.m. </td>
+                </tr>
+                <tr>
+                    <td> Wednesday </td>
+                    <td> 8:00 a.m. </td>
+                    <td> 12:00 p.m. </td>
+                    <td> XSL Formatting Objects </td>
+                </tr>
+            </tbody>
+
+        </table><br>
+
+        <!-- Q.6 - Create below table using HTML table tags -->
+
+        <h2>Create below table using HTML table tags</h2><br>
+        <table border="3" width="80%" height="350px" style="text-align: center;color: white;border-color: white;"
+            cellspacing="0">
+            <caption
+                style="background-color: rgb(46, 165, 46); font-size: 30px;color: black;font-family: 'Times New Roman', Times, serif;font-weight: 600;">
+                European Roulette</caption>
+            <tr>
+                <td rowspan="5" style="background-color: rgb(46, 165, 46);width: 7%;">0</td>
+                <td style="background-color: red;">3</td>
+                <td style="background-color: black;">6</td>
+                <td style="background-color: red;width: 7%;">9</td>
+                <td style="background-color: red;">12</td>
+                <td style="background-color: black;">15</td>
+                <td style="background-color: red;">18</td>
+                <td style="background-color: red;">21</td>
+                <td style="background-color: black;">24</td>
+                <td style="background-color: red;">27</td>
+                <td style="background-color: red;">30</td>
+                <td style="background-color: black;">33</td>
+                <td style="background-color: red;">36</td>
+                <td style="text-align: left;background-color: rgb(46, 165, 46);">2to1</td>
+            </tr>
+            <tr>
+                <td style="background-color: black;">2</td>
+                <td style="background-color: red;">5</td>
+                <td style="background-color: black;">8</td>
+                <td style="background-color: black;">11</td>
+                <td style="background-color: red;">14</td>
+                <td style="background-color: black;">17</td>
+                <td style="background-color: black;">20</td>
+                <td style="background-color: red;">23</td>
+                <td style="background-color: black;">26</td>
+                <td style="background-color: black;">29</td>
+                <td style="background-color: red;">32</td>
+                <td style="background-color: black;">35</td>
+                <td style="text-align: left;background-color: rgb(46, 165, 46);">2to1</td>
+            </tr>
+            <tr>
+                <td style="background-color: red;">1</td>
+                <td style="background-color: black;">4</td>
+                <td style="background-color: red;">7</td>
+                <td style="background-color: black;">10</td>
+                <td style="background-color: black;">13</td>
+                <td style="background-color: red;">16</td>
+                <td style="background-color: red;">19</td>
+                <td style="background-color: black;">22</td>
+                <td style="background-color: red;">25</td>
+                <td style="background-color: black;">28</td>
+                <td style="background-color: black;">31</td>
+                <td style="background-color: red;">34</td>
+                <td style="text-align: left;background-color: rgb(46, 165, 46);">2to1</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="background-color: rgb(46, 165, 46);">1st12</td>
+                <td colspan="4" style="background-color: rgb(46, 165, 46);">2nd12</td>
+                <td colspan="4" style="background-color: rgb(46, 165, 46);">3rd12</td>
+                <td rowspan="2" style="background-color: rgb(46, 165, 46);"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: rgb(46, 165, 46);">1to18</td>
+                <td colspan="2" style="background-color: rgb(46, 165, 46);">EVEN</td>
+                <td colspan="2" style="background-color: red;"></td>
+                <td colspan="2" style="background-color: black;"></td>
+                <td colspan="2" style="background-color: rgb(46, 165, 46);">ODD</td>
+                <td colspan="2" style="background-color: rgb(46, 165, 46);">19to36</td>
+            </tr>
+        </table><br>
+
+        <!-- Q.7 - Create Registration form using HTML, CSS -->
+
+        <h2>Create Registration form using HTML, CSS</h2>
+
+        <header class="title">
+            <center>
+                <h1 id="title">StackDeck Survey Form</h1>
+            </center>
+            <center><em>
+                    <p id="description">Thank you for taking the time to help us improve the platform</p>
+                </em></center>
+        </header>
+
+        <main>
+
+            <form id="survey-form" action="https://www.tops-int.com/fullstack-training-course">
+
+                <fieldset>
+                    <label id="name-label">Name<input type="text" id="name" placeholder="Enter your name"
+                            required></label>
+                    <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email"
+                            required></label>
+                    <label id="number-label">Age(optional)<input type="number" id="number" min="10" max="99"
+                            placeholder="Age"></label>
+
+                    <label>Which option best describes your current role?</label>
+                    <select id="dropdown">
+                        <option class="option1">Select current role</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+                    <label>Would you recommend StackDeck to a friend?</label>
+                    <label for="Definitely"><input type="radio" name="options" id="Definitely"
+                            value="Definitely">Definitely</label>
+                    <label for="Maybe"><input type="radio" name="options" id="Maybe" value="Maybe">Maybe</label>
+                    <label for="Not-sure"><input type="radio" name="options" id="Not-sure" value="Not-sure">Not
+                        sure</label>
+                </fieldset>
+
+                <fieldset>
+                    <label>What is your favorite feature of StackDeck?</label>
+                    <select id="feature">
+                        <option class="option1">Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+
+                    <label>What would you like to see improved?(Check all that apply)</label>
+                    <label><input type="checkbox" value="front-end">Front-end Projects</label>
+                    <label><input type="checkbox" value="back-end">Back-end Projects</label>
+                    <label><input type="checkbox" value="data visualization">Data Visualization</label>
+                    <label><input type="checkbox" value="challenges">Challenges</label>
+                    <label><input type="checkbox" value="community">Open Source Community</label>
+                    <label><input type="checkbox" value="help-rooms">Gitter help rooms</label>
+                    <label><input type="checkbox" value="videos">Videos</label>
+                    <label><input type="checkbox" value="meetups">City Meetups</label>
+                    <label><input type="checkbox" value="wiki">Wiki</label>
+                    <label><input type="checkbox" value="forum">Forum</label>
+                    <label><input type="checkbox" value="courses">Additional Courses</label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Any comments or suggestions?</label>
+                    <textarea cols="40" rows="4" placeholder="Enter your comment here..."></textarea>
+                    <input type="submit" id="submit" value="Submit">
+                </fieldset>
+
+            </form>
+        </main>
+        <br>
+
+        <!-- Q-8 In how many ways can a CSS be integrated as a web page? -->
+
+        <h2>In how many ways can a CSS be integrated as a web page?</h2><br>
+        <p>CSS can be integrated in 3 different ways to a web page, and they are as below:</p>
+        <ul>
+            <li><b>Internal CSS:</b> We can easily call CSS features inside the same HTML file, that integration is
+                known as
+                Internal.
+                <p><b>For Ex:</b>
+                    <br><code style="color: orange;">&emsp;&emsp;&lt;head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;style&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Internal CSS{}<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;&frasl;style&gt;<br>
+                    &emsp;&emsp;&lt;&frasl;head&gt;</code>
+                </p>
+            </li>
+
+            <li><b>External CSS:</b> We can link an external / outside CSS file inside the HTML file using the file
+                directory option<p><b>For Ex:</b>
+                    <br><code style="color: orange;">&emsp;&emsp;&lt;head&gt;<br>
+                    &emsp;&emsp;&lt;link rel="stylesheet" href="CSS file path"&gt;<br>
+                    &emsp;&emsp;&lt;&frasl;head&gt;</code>
+                </p>
+            </li>
+
+            <li><b>Inline CSS:</b> If CSS style is given in the same line of HTML body part of tags then that is an
+                Inline
+                type of CSS.
+                <p><b>For Ex:</b>
+                    <br><code
+                        style="color: orange;">&emsp;&emsp;&lt;div style="background-color: Blue"&gt; &lt;&frasl;div&gt;</code>
+                </p>
+            </li>
+        </ul><br>
+
+        <!-- Q.9 - Create below page using HTML CSS -->
+
+        <h2>Create below page using HTML CSS</h2><br>
+
+        <p>This excercise has been attached separately in the same Git folder under Registration_Form. Please find
+            attached.</p><br>
+
+        <!-- Q.10 - Create link-pseudo classes using external css, to format links on the pages. -->
+
+        <h2> Create link-pseudo classes using external css, to format links on the pages. </h2><br>
+        <p>To create link pseudo-classes using external CSS, we can use the following selectors and properties:</p>
+
+        <p><b>For ex:</b><br>
+            <code style="color: orange;">&emsp;&emsp;a:link { <br>
+                &emsp;&emsp;&emsp;&emsp;color: blue; <br>
+                &emsp;&emsp;&emsp;&emsp;text-decoration: underline;<br>&emsp;&emsp;}<br></code>
+            <code style="color: orange;">&emsp;&emsp;a:visited { <br>
+                &emsp;&emsp;&emsp;&emsp;color: purple; <br>
+                &emsp;&emsp;}<br></code>
+            <code style="color: orange;">&emsp;&emsp;a:hover { <br>
+                &emsp;&emsp;&emsp;&emsp;color: red; <br>
+                &emsp;&emsp;&emsp;&emsp;text-decoration: none;<br>&emsp;&emsp;}<br></code>
+            <code style="color: orange;">&emsp;&emsp;a:active { <br>
+                &emsp;&emsp;&emsp;&emsp;color: green; <br>
+                &emsp;&emsp;}<br></code><br>
+        <p>By combining these pseudo-classes with the "a" selector (which selects all anchor tags), we can apply
+            different styles to links based on their state.</p>
+        <p>To apply these styles externally, create a separate CSS file (e.g., "styles.css") and link it in the HTML
+            document's <b>&lt;head&gt;</b> section using the
+            <b>&lt;link&gt;</b> tag.
+        </p><br>
+
+        <!-- Q.11 - Create a dynamic pseudo class using HTML, CSS -->
+        <h2>Create a dynamic pseudo class using HTML, CSS</h2><br>
+        <p> In HTML and CSS, we cannot create custom dynamic pseudo-classes. Pseudo-classes are predefined in CSS and
+            are based on certain states or conditions of elements, such as :hover, :active, :visited, etc.</p>
+        <p>However, you can use JavaScript to add or remove classes dynamically based on certain events or conditions,
+            which can achieve similar effects.</p>
+
+        <p><b>For ex:</b><br>
+            <code style="color: orange;">
+                &emsp;&emsp;&lt;button id="myButton"&gt;Click me&lt;&frasl;button&gt; //HTML code <br><br>
+                &emsp;&emsp;button.dynamic-class {<br> &emsp;&emsp;&emsp;&emsp;background-color: yellow; <br>&emsp;&emsp;} //CSS code <br><br>&emsp;&emsp;//JavaScript code <br>
+                &emsp;&emsp;var button = document.getElementById('myButton');<br>
+                &emsp;&emsp;button.addEventListener('click', function(){<br> &emsp;&emsp;button.classicList.add('dynamic-class');});
+            </code>
+        </p><br>
+
+        <p>In this example, when the button is clicked, the JavaScript code adds the "dynamic-class" to the button
+            element using the classList.add() method. The CSS rule .dynamic-class is defined with a yellow background
+            color.</p>
+        <p>By dynamically adding or removing classes on elements using JavaScript, we can achieve dynamic styling
+            effects that appear similar to pseudo-classes.</p><br>
+
+        <!-- Q.12 - What are the new tags added in HTML5? -->
+
+        <h2>What are the new tags added in HTML5?</h2><br>
+        <p>HTML5 introduced several new tags to enhance the structure and semantics of web documents. Here are some of
+            the notable new tags added in HTML5:</p>
+        <ul>
+            <li><b>&lt;header&gt;:</b> Represents the introductory content or a group of navigational elements for a
+                section or a page.</li>
+            <li><b>&lt;nav&gt;:</b> Represents a section of a page that contains navigation links.</li>
+            <li><b>&lt;main&gt;:</b> Represents the main content of a document. There should be only one <main> element
+                    per page.</li>
+            <li><b>&lt;article&gt;:</b> Represents a self-contained composition within a document, such as a blog post,
+                a news story, or a forum post.</li>
+            <li><b>&lt;section&gt;:</b> Represents a thematic grouping of content, typically with a heading. </li>
+            <li><b>&lt;aside&gt;:</b> Represents content that is tangentially related to the main content, such as
+                sidebars, pull quotes, or advertisements.</li>
+            <li><b>&lt;figure&gt; and &lt;figcaption&gt;:</b> &lt;figure&gt; is used to encapsulate self-contained
+                content, such as images, diagrams, illustrations, or code examples. &lt;figcaption&gt; is used to
+                provide a caption or description for the content inside the &lt;figure&gt; element. </li>
+            <li><b>&lt;footer&gt;:</b> Represents the footer section of a document or a section. It typically contains
+                information about the author, copyright notice, links to related documents, or contact information.
+            </li>
+            <li><b>&lt;video&gt; and &lt;audio&gt;:</b> &lt;video&gt; is used to embed video content in a document, and
+                &lt;audio&gt; is used to embed audio content.</li>
+            <li><b>&lt;datalist&gt; and &lt;option&gt;:</b> &lt;datalist&gt; provides a pre-defined list of options for
+                an input field, and &lt;option&gt; represents an option within a &lt;select&gt; element or a
+                &lt;datalist&gt; element.</li>
+        </ul><br>
+
+        <!-- Q.13 - How to embed audio and video in a webpage? -->
+
+        <h2>How to embed audio and video in a webpage?</h2><br>
+        <h4>Embedding Audio:</h4>
+        <ol type="1">
+            <li>Provide a source for the audio file using the &lt;source&gt; tag within the &lt;audio&gt; tag.</li>
+            <li>Specify the audio file's format using the "src" attribute in the &lt;source&gt; tag.</li>
+            <li>Add fallback content between the opening and closing &lt;audio&gt; tags for browsers that don't support
+                the
+                &lt;audio&gt; element.</li>
+        </ol>
+        <p><b>For ex:</b><br>
+            <code style="color: orange">
+                &emsp;&emsp;&lt;audio controls&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;source src="audio-file.mp3" type="audio/mp3"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;source src="audio-file.ogg" type="audio/ogg"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;Your browser does not support the audio element. <br>
+                &emsp;&emsp;&lt;&frasl;audio&gt;<br>
+            </code>
+        </p>
+
+        <h4>Embedding Video:</h4>
+        <ol type="1">
+            <li>Provide a source for the video file using the &lt;source&gt; tag within the &lt;video&gt; tag.</li>
+            <li>Specify the video file's format using the "src" attribute in the &lt;source&gt; tag.</li>
+            <li>Add fallback content between the opening and closing &lt;video&gt; tags for browsers that don't support
+                the &lt;video&gt; element.</li>
+        </ol>
+        <p><b>For ex:</b><br>
+            <code style="color: orange;">
+            &emsp;&emsp;&lt;video controls&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;source src="video-file.mp4" type="video/mp4"&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;source src="video-file.webm" type="video/webm"&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;Your browser does not support the video element. <br>
+            &emsp;&emsp;&lt;&frasl;video&gt;<br>              
+        </code>
+        </p><br>
+
+        <!-- Q.14 - Semantic element in HTML5 -->
+
+        <h2>Semantic element in HTML5</h2><br>
+        <p>HTML5 introduced several new tags to enhance the structure and semantics of web documents. Here are some of
+            the notable new tags added in HTML5:</p>
+        <ul>
+            <li><b>&lt;header&gt;:</b> Represents the introductory content or a group of navigational elements for a
+                section or a page.</li>
+            <li><b>&lt;nav&gt;:</b> Represents a section of a page that contains navigation links.</li>
+            <li><b>&lt;main&gt;:</b> Represents the main content of a document. There should be only one <main> element
+                    per page.</li>
+            <li><b>&lt;article&gt;:</b> Represents a self-contained composition within a document, such as a blog post,
+                a news story, or a forum post.</li>
+            <li><b>&lt;section&gt;:</b> Represents a thematic grouping of content, typically with a heading. </li>
+            <li><b>&lt;aside&gt;:</b> Represents content that is tangentially related to the main content, such as
+                sidebars, pull quotes, or advertisements.</li>
+            <li><b>&lt;figure&gt; and &lt;figcaption&gt;:</b> &lt;figure&gt; is used to encapsulate self-contained
+                content, such as images, diagrams, illustrations, or code examples. &lt;figcaption&gt; is used to
+                provide a caption or description for the content inside the &lt;figure&gt; element. </li>
+            <li><b>&lt;footer&gt;:</b> Represents the footer section of a document or a section. It typically contains
+                information about the author, copyright notice, links to related documents, or contact information.
+            </li>
+            <li><b>&lt;video&gt; and &lt;audio&gt;:</b> &lt;video&gt; is used to embed video content in a document, and
+                &lt;audio&gt; is used to embed audio content.</li>
+            <li><b>&lt;datalist&gt; and &lt;option&gt;:</b> &lt;datalist&gt; provides a pre-defined list of options for
+                an input field, and &lt;option&gt; represents an option within a &lt;select&gt; element or a
+                &lt;datalist&gt; element.</li>
+        </ul><br>
+        <p>These semantic elements help structure web documents in a more meaningful way, making them easier to
+            understand and navigate for both humans and machines. It's important to use these elements appropriately and
+            in conjunction with other HTML tags to create well-structured and accessible web pages.</p><br>
+
+        <!-- Q.15 - Canvas and SVG tags -->
+
+        <h2>Canvas and SVG tags</h2><br>
+        <p>Both the &lt;canvas&gt; and &lt;svg&gt; tags in HTML5 are used for drawing graphics, but they have different
+            approaches and use cases.</p>
+        <h4>&lt;canvas&gt;:</h4>
+        <ul>
+            <li>The &lt;canvas&gt; element provides a drawing surface on which you can render dynamic graphics using
+                JavaScript.</li>
+            <li>It acts as a bitmap or raster graphics container, allowing you to manipulate pixels directly.</li>
+            <li>You can use JavaScript to draw shapes, images, and animations on the canvas.</li>
+            <li>The content drawn on the canvas is not part of the document's DOM, so it's not directly accessible or
+                searchable.</li>
+            <li>It is suitable for complex, dynamic, and interactive graphics, such as games or data visualizations.
+            </li>
+        </ul>
+        <p><b>For ex:</b><br>
+            <code style="color: orange;">
+            &emsp;&emsp;&lt;canvas id="myCanvas" width="400" height="200"&gt;&lt;&frasl;canvas&gt;
+        </code>
+        </p>
+
+        <h4>&lt;svg&gt;:</h4>
+        <ul>
+            <li>Scalable Vector Graphics element defines a vector-based graphics container.</li>
+            <li>It uses XML markup to describe graphical objects and elements, allowing for resolution-independent
+                graphics.</li>
+            <li> &lt;svg&gt; elements are part of the document's DOM and can be styled, animated, and interacted with
+                using CSS and JavaScript. </li>
+            <li>We can draw shapes, paths, text, and images using SVG-specific elements and attributes.</li>
+            <li> The content within an &lt;svg&gt; element is accessible, searchable, and can be styled or manipulated
+                using CSS and JavaScript.</li>
+        </ul>
+        <p><b>For ex:</b><br>
+            <code style="color: orange;">
+                &emsp;&emsp;&lt;svg width="400" height="200"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;rect x="50" y="50" width="300" height="100" fill="blue"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;circle cx="200" cy="150" r="50" fill="red"&gt;<br>
+                &emsp;&emsp;&lt;&frasl;svg&gt;                  
+        </code>
+        </p>
+        <p>Use &lt;canvas&gt; for complex, dynamic graphics, and &lt;svg&gt; for scalable, resolution-independent, and
+            accessible graphics.</p>
+    </div>
+
+
+</body>
+
+</html>
